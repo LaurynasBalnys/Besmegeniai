@@ -8,6 +8,7 @@
 body {
   background-color: #ffffff;
   color: #1a1a1a;
+  height: 100px;
 }
 
 .container {
@@ -133,7 +134,7 @@ button:hover {
   background-color: #1a1a1a;
   color: #fff;
   padding: 50px 40px 20px;
-  height: 548px;
+  height: 350px;
   margin-top: auto;
   position: relative;
   bottom: 350px;
