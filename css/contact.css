@@ -40,15 +40,15 @@ body {
   font-size: 3rem;
   position: relative;
   font-weight: bold;
-  top: 220px;
-  right: 535px;
+  top: 130px;
+  right: 600px;
 }
 
 .emoji {
   color: #c49b36;
   position: relative;
-  left: 285px;
-  top: -59px;
+  right: -30px;
+  top: 2px;
 }
 
 /* Form block */
@@ -56,8 +56,8 @@ body {
   flex: 1;
   max-width: 700px;
   position: absolute;
-  left: 600px;
-  top: 330px;
+  left: 500px;
+  top: 250px;
 }
 
 form {
@@ -98,7 +98,11 @@ button {
   font-size: 1rem;
   width: 140px;
   border-radius: 4px;
+  position: relative;
   transition: background-color 0.3s;
+  top: 40px;
+
+  
 }
 
 button:hover {
@@ -113,11 +117,11 @@ button:hover {
 }
 
 .law-image {
-  height: 470px;
+  height: 550px;
   width: 550px;
   position: absolute;
-  left: 150px;
-  top: 50px;
+  left: 50px;
+  top: 0px;
 }
 
 .logo-text h2 {
@@ -147,7 +151,6 @@ button:hover {
   text-align: center;
   position: relative;
   height: 660px;
-  bottom: 0;
   bottom: 426px;
 }
 
@@ -199,6 +202,8 @@ button:hover {
   margin-bottom: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  position: relative;
+  top: 10px;
 }
 
 .subscribe-btn:hover {
@@ -234,9 +239,16 @@ button:hover {
   border: none;
   border-top: 1px solid #777;
   margin-bottom: 20px;
+  position: relative;
+  top: 10px;
 }
 
 .footer p {
   font-size: 0.85rem;
   color: #aaa;
+}
+
+.copyright {
+  position: relative;
+  top: 10px;
 }
