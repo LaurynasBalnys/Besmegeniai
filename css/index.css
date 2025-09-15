@@ -1,0 +1,168 @@
+body{
+    margin:0;
+}
+
+.split-header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header-left,
+.header-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header-left {
+  background-color: #15161a; /* Dark left side */
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  background-color: white; /* Light right side */
+ justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 90px;
+  margin-top: 8%;
+  height: 120px;
+  right: 100px;
+  position: relative;
+  
+}
+
+.nav-links a {
+  color: #15161a; /* Black text for links */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c49b36;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  text-align: center;
+  position: relative;
+  height: 660px;
+  bottom: -426px;
+  top: 500px;
+  margin-top: 500px;
+}
+
+.footer-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-input {
+  width: 100%;
+  max-width: 480px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #000;           
+  outline: none;
+  box-shadow: none;
+}
+.newsletter-label {
+  font-size: 0.9rem;
+  color: #aaaaaa5d; 
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  max-width: 480px;
+  position: relative;
+  right: 188px;
+}
+
+.subscribe-btn {
+  background-color: #e5b951;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: 10px;
+}
+
+.subscribe-btn:hover {
+  background-color: #cfa935;
+}
+
+.follow-us h4 {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-line {
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  border-top: 1px solid #777;
+  margin-bottom: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.copyright {
+  position: relative;
+  top: 10px;
+}

@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #363636;
+}
+
+.form-box {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px;
+  gap: 50px;
+}
+
+/* Contact heading block */
+.form-section {
+  max-width: 300px;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  position: relative;
+  font-weight: bold;
+  top: 120px;
+  right: 590px;
+}
+
+.emoji {
+  color: #c49b36;
+  position: relative;
+  right: -30px;
+  top: 2px;
+  
+}
+
+/* Form block */
+.form-box {
+  flex: 1;
+  max-width: 700px;
+  position: absolute;
+  left: 500px;
+  top: 285px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  margin: 20px;
+  border-bottom: 2px solid #ccc;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 4px solid #000;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+button {
+  padding: 12px;
+  background-color: #363636;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 140px;
+  border-radius: 4px;
+  position: relative;
+  transition: background-color 0.3s;
+  top: 40px;
+  font-family: 'poppins';
+  font-weight: 200;
+  
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* Image block */
+.image-section {
+  text-align: center;
+  position: absolute;
+  top: 250px;
+}
+
+.law-image {
+  height: 550px;
+  width: 500px;
+  position: absolute;
+  left: 250px;
+  top: 0px;
+}
+
+.logo-text h2 {
+  font-size: 3.2rem;
+  margin-top: 10px;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 510px;
+  left: 300px;
+}
+
+.logo-text p {
+  color: #c49b36;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  position: relative;
+  top: 580px;
+  left: 380px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  text-align: center;
+  position: relative;
+  height: 660px;
+  bottom: 426px;
+}
+
+.footer-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.newsletter-input {
+  width: 100%;
+  max-width: 480px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #000;           
+  outline: none;
+  box-shadow: none;
+}
+.newsletter-label {
+  font-size: 0.9rem;
+  color: #aaaaaa5d; 
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  max-width: 480px;
+  position: relative;
+  right: 188px;
+}
+
+.subscribe-btn {
+  background-color: #e5b951;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: 10px;
+}
+
+.subscribe-btn:hover {
+  background-color: #cfa935;
+}
+
+.follow-us h4 {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-line {
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  border-top: 1px solid #777;
+  margin-bottom: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.copyright {
+  position: relative;
+  top: 10px;
+}
+
+.split-header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header-left,
+.header-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header-left {
+  background-color: #15161a; /* Dark left side */
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  background-color: white; /* Light right side */
+ justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 90px;
+  margin-top: 8%;
+  height: 120px;
+  right: 100px;
+  position: relative;
+  
+}
+
+.nav-links a {
+  color: #15161a; /* Black text for links */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c49b36;
+}
