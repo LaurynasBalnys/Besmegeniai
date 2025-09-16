@@ -43,8 +43,8 @@ body {
   font-size: 3rem;
   position: relative;
   font-weight: bold;
-  top: 120px;
-  right: 590px;
+  top: 5rem;
+  right: 580px;
 }
 
 .emoji {
@@ -58,17 +58,18 @@ body {
 /* Form block */
 .form-box {
   flex: 1;
-  max-width: 700px;
+  max-width: 500px;
   position: absolute;
-  left: 500px;
+  width: 100px;
+  left: 5rem;
   top: 285px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 600px;
+  gap: 0px;
+  width: 35rem;
 }
 
 input,
@@ -92,6 +93,9 @@ textarea:focus {
 textarea {
   resize: vertical;
   min-height: 130px;
+  position: relative;
+  padding-top: 120px; 
+  resize: none;
 }
 
 button {
@@ -108,7 +112,7 @@ button {
   top: 40px;
   font-family: 'poppins';
   font-weight: 200;
-  
+  left: 20px;
 }
 
 button:hover {
@@ -123,10 +127,10 @@ button:hover {
 }
 
 .law-image {
-  height: 550px;
-  width: 500px;
+  height: 30rem;
+  /* width: 30rem; */
   position: absolute;
-  left: 250px;
+  left: 5rem;
   top: 0px;
 }
 
@@ -156,8 +160,8 @@ button:hover {
   padding: 60px 20px 30px;
   text-align: center;
   position: relative;
-  height: 660px;
-  bottom: 426px;
+  height: 100rem;
+  bottom: 30px;
 }
 
 .footer-wrapper {
@@ -176,8 +180,11 @@ button:hover {
 
 .newsletter-input {
   width: 100%;
+  position: relative;
+  right: 3px;
+  top: -20px;
   max-width: 480px;
-  padding: 12px 16px;
+  padding: 16px 16px 12px; /* 👈 more top padding */
   margin-bottom: 20px;
   border: none;
   border-radius: 2px;
@@ -187,6 +194,7 @@ button:hover {
   outline: none;
   box-shadow: none;
 }
+
 .newsletter-label {
   font-size: 0.9rem;
   color: #aaaaaa5d; 
@@ -209,7 +217,7 @@ button:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
   position: relative;
-  top: 10px;
+  top: -8px;
 }
 
 .subscribe-btn:hover {
@@ -293,7 +301,7 @@ button:hover {
 .nav-links {
   display: flex;
   gap: 90px;
-  margin-top: 8%;
+  margin-top: 11%;
   height: 120px;
   right: 100px;
   position: relative;
