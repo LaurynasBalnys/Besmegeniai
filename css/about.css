@@ -1,0 +1,66 @@
+body{
+    margin: 0%;
+    margin-top: 200px;
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: bold;
+}
+
+p{
+    font-family: "Poppins", sans-serif;
+    font-weight:200;
+}
+    
+button.read_more{
+    background-color: #18191e;
+    color: #ffffff;
+    border: none;
+    width: 175px;
+    height: 50px;
+    font-family: "Poppins";
+    font-weight:lighter;
+    font-style: light;
+    font-size: 17px;
+    border-radius: 5px;
+
+    position: static;
+    align-self: flex-start;
+}
+
+p.about_text{
+    max-width: 587px;
+
+    position: static;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h1.title{
+    position: static;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 200px auto 0 auto;
+    padding: 0 40px;
+}
+
+img.law_image{
+    width: 570px;
+    height: 422px;
+    position: static; /* убираем absolute */
+    margin-left: 40px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 587px;
+}
