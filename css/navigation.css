@@ -1,5 +1,5 @@
 body {
-    padding-top: 70px; /* чтобы контент не был под header */
+    padding-top: 70px;
 }
 
 .split-header {
@@ -67,9 +67,9 @@ body {
   text-align: center;
   position: relative;
   height: 660px;
-  bottom: -426px;
-  top: 500px;
-  margin-top: 500px;
+  bottom: 0;
+  /* top: 500px; */
+  /* margin-top: 20px; */
 }
 
 .footer-wrapper {

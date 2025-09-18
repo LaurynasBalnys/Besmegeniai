@@ -21,6 +21,7 @@ body {
 .form-box {
   flex: 1;
   padding: 20px;
+  /* margin-bottom: 20px; */
 }
 
 
@@ -32,6 +33,7 @@ body {
   justify-content: center;
   padding: 40px;
   gap: 50px;
+  margin-bottom: 50px;
 }
 
 /* Contact heading block */
@@ -72,8 +74,7 @@ form {
   width: 35rem;
 }
 
-input,
-textarea {
+input, textarea {
   width: 100%;
   padding: 5px;
   border: none;
@@ -85,8 +86,7 @@ textarea {
   transition: border-color 0.3s;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   border-bottom: 4px solid #000;
 }
 
@@ -98,7 +98,7 @@ textarea {
   resize: none;
 }
 
-button {
+.submit{
   padding: 12px;
   background-color: #363636;
   color: white;
