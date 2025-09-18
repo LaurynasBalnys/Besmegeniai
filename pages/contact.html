@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>LawSpar Contact Page</title>
   <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="split-header">
@@ -44,31 +47,28 @@
 
   
   <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="newsletter">
-        <h3>Subscribe to our Newsletter</h3>
-        <form class="subscribe-form">
-          <input type="email" placeholder="Enter Your Email" required />
-          <button type="submit">SUBSCRIBE</button>
-        </form>
-      </div>
+<footer class="footer">
+  <div class="footer-wrapper">
+    <h3 class="newsletter-title">NEWSLETTER</h3>
 
-      <div class="social">
-        <h3>FOLLOW US</h3>
-        <div class="icons">
-          <a href="#"><img src="../images/facebook.svg" alt="Facebook" /></a>
-          <a href="#"><img src="../images/twitter.svg" alt="Twitter" /></a>
-          <a href="#"><img src="../images/instagram.svg" alt="Instagram" /></a>
-          <a href="#"><img src="../images/linkedin.svg" alt="LinkedIn" /></a>
-        </div>
+    <label for="newsletter" class="newsletter-label">Enter Your Email</label>
+    <input type="email" id="newsletter" class="newsletter-input" />
+    <button class="subscribe-btn">SUBSCRIBE</button>
+
+    <div class="follow-us">
+      <h4>FOLLOW US</h4>
+      <div class="social-icons">
+        <a href="#"><img src="../images/fb.png" alt="Facebook" /></a>
+        <a href="#"><img src="../images/twitter.png" alt="Twitter" /></a>
+        <a href="#"><img src="../images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="../images/insta.png" alt="Instagram" /></a>
       </div>
+    </div>
 
       <hr class="footer-line" />
 
-    <div class="footer-bottom">
-      <p>Copyright © 2019 All Rights Reserved By Free Html Templates.</p>
-    </div>
-  </footer>
+    <p class="copyright">Copyright 2019 All Right Reserved By Free html Templates</p>
+  </div>
+</footer>
 </body>
 </html>
