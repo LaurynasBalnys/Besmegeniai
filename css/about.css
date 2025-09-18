@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    margin-top: 12.5rem;
+    position: relative;
+}
+
+.about-container {
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 36.688rem; /* или нужная ширина */
+}
+
+img.law_image {
+    position: absolute;
+    right: -20rem;
+    top: 0;
+    width: 35.625rem;
+    max-width: 100%;
+    height: auto;
+}
+
+h1.title {
+    margin-bottom: 1.25rem;
+    position: relative;
+    top: 20px;
+    left: -250px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 40px;
+}
+
+p.about_text {
+    max-width: 36.688rem;
+    width: 33,688rem;;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 17px;
+    left: -250px;
+    top: 40px;
+}
+
+button.read_more {
+    background-color: #18191e;
+    color: #ffffff;
+    border: none;
+    min-width: 11rem;
+    height: 3.125rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1.063rem;
+    border-radius: 0.313rem;
+    text-align: center;
+    position: relative;
+    margin-top: 1rem;
+
+    top: 60px;
+    left: -250px;
+}
+
+.teams_pages {
+    background-color: #18191e;
+    height: 70rem;
+    position: relative;
+    margin-top: 250px;
+}
+
+img.icon{
+    width: 40px;
+    height: 40px;
+}
+
+/* Адаптив для планшетов и телефонов */
+@media (max-width: 900px) {
+    .about-content,
+    img.law_image {
+        position: static;
+        width: 60%;
+        left: 50%;
+        /* right: auto; */
+        top: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    h1.title{
+        position: static;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+
+
+    p.about_text {
+        position: static;
+        width: 100%;
+        text-align: center;
+        max-width: 60%;
+        margin-left: 22%;
+    }
+
+    button.read_more {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-left: 35%;
+    }
+
+    .teams_pages{
+        margin-top: 0px;
+    }
+}
