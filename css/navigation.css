@@ -33,16 +33,14 @@ body {
 }
 
 .header-right {
-    background-color: white; /* Light right side */
+    background-color: #f7f7fB; /* Light right side */
     justify-content: flex-end;
 }
 
 .nav-links {
   display: flex;
-  gap: 90px;
-  margin-top: 8%;
-  height: 120px;
-  right: 100px;
+  gap: 40px;
+  right: 20px;
   position: relative;
   
 }
@@ -53,6 +51,8 @@ body {
   font-weight: 500;
   font-size: 17px;
   transition: color 0.3s ease;
+  font-family: "Poppins";
+  font-weight: 17px;
 }
 
 .nav-links a:hover {
@@ -66,7 +66,7 @@ body {
   padding: 60px 20px 30px;
   text-align: center;
   position: relative;
-  height: 660px;
+  height: auto;
   bottom: 0;
   /* top: 500px; */
   /* margin-top: 20px; */
@@ -81,6 +81,7 @@ body {
 }
 
 .newsletter-title {
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 0.9rem;
   margin-bottom: 10px;
@@ -100,20 +101,21 @@ body {
   box-shadow: none;
 }
 .newsletter-label {
-  font-size: 0.9rem;
   color: #aaaaaa5d; 
   margin-bottom: 8px;
   display: block;
   text-align: left;
   max-width: 480px;
   position: relative;
+  font-family: 'Poppins';
+  font-weight:normal;
   right: 188px;
 }
 
 .subscribe-btn {
   background-color: #e5b951;
   color: #fff;
-  font-weight: bold;
+  font-weight: 17px;
   border: none;
   padding: 12px 25px;
   border-radius: 3px;
@@ -122,6 +124,7 @@ body {
   transition: background-color 0.3s ease;
   position: relative;
   top: 10px;
+  font-family: "Roboto";
 }
 
 .subscribe-btn:hover {
@@ -132,6 +135,8 @@ body {
   margin-bottom: 15px;
   font-size: 0.9rem;
   letter-spacing: 1px;
+  font-family: "Roboto";
+  font-weight: 17px;
 }
 
 .social-icons {
@@ -169,6 +174,6 @@ body {
 .copyright {
   position: relative;
   font-family: "Open Sans";
-  font-weight: 17px;
+  font-weight: 16px;
   top: 10px;
 }

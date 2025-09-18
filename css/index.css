@@ -15,6 +15,15 @@ body{
   padding: 0 40px;
 }
 
+.verticalLine{
+  width: 2px;
+  height: 201px;
+  background-color: white;
+  position: relative;
+  top: -80px;
+  left: -200px;
+}
+
 .box-left {
   background-color: #f7f7fB; 
   color: #15161a;
@@ -28,7 +37,7 @@ body{
 .text-right{
   font-weight: bold;
   font-size: 60px;
-  font-family: Poppins;
+  font-family: "Poppins";
   padding-left: 20px;
   line-height: 1.2;
 }
