@@ -5,10 +5,24 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-body {
-  background-color: #ffffff;
-  color: #1a1a1a;
+html, body {
+  height: 100%;
+  margin: 0;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #363636;
+}
+
+.form-box {
+  flex: 1;
+  padding: 20px;
+}
+
 
 .container {
   display: flex;
@@ -29,38 +43,41 @@ body {
   font-size: 3rem;
   position: relative;
   font-weight: bold;
-  top: 220px;
-  right: 535px;
+  top: 5rem;
+  right: 580px;
 }
 
 .emoji {
   color: #c49b36;
   position: relative;
-  left: 285px;
-  top: -59px;
+  right: -30px;
+  top: 2px;
+  
 }
 
 /* Form block */
 .form-box {
   flex: 1;
-  max-width: 700px;
+  max-width: 500px;
   position: absolute;
-  left: 600px;
-  top: 330px;
+  width: 100px;
+  left: 5rem;
+  top: 285px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 600px;
+  gap: 0px;
+  width: 35rem;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   border: none;
+  margin: 20px;
   border-bottom: 2px solid #ccc;
   font-size: 1rem;
   background-color: transparent;
@@ -76,18 +93,26 @@ textarea:focus {
 textarea {
   resize: vertical;
   min-height: 130px;
+  position: relative;
+  padding-top: 120px; 
+  resize: none;
 }
 
 button {
   padding: 12px;
-  background-color: #1a1a1a;
+  background-color: #363636;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   width: 140px;
   border-radius: 4px;
+  position: relative;
   transition: background-color 0.3s;
+  top: 40px;
+  font-family: 'poppins';
+  font-weight: 200;
+  left: 20px;
 }
 
 button:hover {
@@ -102,11 +127,11 @@ button:hover {
 }
 
 .law-image {
-  height: 470px;
-  width: 550px;
+  height: 30rem;
+  /* width: 30rem; */
   position: absolute;
-  left: 150px;
-  top: 50px;
+  left: 5rem;
+  top: 0px;
 }
 
 .logo-text h2 {
@@ -131,70 +156,166 @@ button:hover {
 /* Footer Styles */
 .footer {
   background-color: #1a1a1a;
-  color: #fff;
-  padding: 50px 40px 20px;
-  height: 548px;
-  margin-top: auto;
-  position: relative;
-  bottom: 350px;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.newsletter h3,
-.social h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.subscribe-form {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.subscribe-form input {
-  padding: 12px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 4px;
-  width: 250px;
-}
-
-.subscribe-form button {
-  padding: 12px 20px;
-  background-color: #c49b36;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.subscribe-form button:hover {
-  background-color: #a07c2c;
-}
-
-.icons a img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-  transition: transform 0.3s;
-}
-
-.icons a:hover img {
-  transform: scale(1.2);
-}
-
-.footer-bottom {
+  color: #ffffff;
+  padding: 60px 20px 30px;
   text-align: center;
-  margin-top: 40px;
+  position: relative;
+  height: 100rem;
+  bottom: 30px;
+}
+
+.footer-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-title {
+  font-weight: bold;
   font-size: 0.9rem;
-  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.newsletter-input {
+  width: 100%;
+  position: relative;
+  right: 3px;
+  top: -20px;
+  max-width: 480px;
+  padding: 16px 16px 12px; /* 👈 more top padding */
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #000;           
+  outline: none;
+  box-shadow: none;
+}
+
+.newsletter-label {
+  font-size: 0.9rem;
+  color: #aaaaaa5d; 
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  max-width: 480px;
+  position: relative;
+  right: 188px;
+}
+
+.subscribe-btn {
+  background-color: #e5b951;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  top: -8px;
+}
+
+.subscribe-btn:hover {
+  background-color: #cfa935;
+}
+
+.follow-us h4 {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-line {
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  border-top: 1px solid #777;
+  margin-bottom: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.footer p {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.copyright {
+  position: relative;
+  top: 10px;
+}
+
+.split-header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header-left,
+.header-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header-left {
+  background-color: #15161a; /* Dark left side */
+  color: #ffffff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  background-color: white; /* Light right side */
+ justify-content: flex-end;
+}
+
+.nav-links {
+  display: flex;
+  gap: 90px;
+  margin-top: 11%;
+  height: 120px;
+  right: 100px;
+  position: relative;
+  
+}
+
+.nav-links a {
+  color: #15161a; /* Black text for links */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #c49b36;
 }
