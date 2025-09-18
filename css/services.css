@@ -1,8 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
 .split-header {
   display: flex;
   width: 100%;
   height: 70px;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 .header-left,
@@ -14,8 +19,8 @@
 }
 
 .header-left {
-  background-color: #15161a; /* Dark left side */
-  color: #ffffff;
+  background-color: #15161a;
+  color: #fff;
 }
 
 .logo {
@@ -25,8 +30,8 @@
 }
 
 .header-right {
-  background-color: white; /* Light right side */
- justify-content: flex-end;
+  background-color: white;
+  justify-content: flex-end;
 }
 
 .nav-links {
@@ -36,11 +41,10 @@
   height: 120px;
   right: 100px;
   position: relative;
-  
 }
 
 .nav-links a {
-  color: #15161a; /* Black text for links */
+  color: #15161a;
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
@@ -51,74 +55,188 @@
   color: #c49b36;
 }
 
-body{
-    margin:0;
+/* What We Cover Section */
+.what-we-cover {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+  margin-bottom: 0px; 
 }
 
-.split-header {
-  display: flex;
-  width: 100%;
-  height: 70px;
-  font-family: 'Segoe UI', sans-serif;
+.what-we-cover .section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 40px;
+  position: relative;
+  top: -30px;
 }
 
-.header-left,
-.header-right {
-  width: 50%;
+.what-we-cover .section-title img {
+  width: 24px;
+  vertical-align: middle;
+  margin-left: 8px;
+  position: relative;
+  
+}
+
+.cards {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  background: rgba(23,24,28,1);
+  overflow: hidden;
+  height: 20rem;
+  color: #fff;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+.card[data-bg="family"]::before {
+  background-image: url('../images/about/family\ law\ bg.png');
+}
+.card[data-bg="traffic"]::before {
+  background-image: url('../images/about/traffic\ Accident\ bg.png');
+}
+.card[data-bg="weapon"]::before {
+  background-image: url('../images/about/Weapon\ bg.png');
+}
+.card[data-bg="financial"]::before {
+  background-image: url('../images/about/finance\ law\ bg.png');
+}
+
+/* Card content wrapper */
+.card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
-}
-
-.header-left {
-  background-color: #15161a; /* Dark left side */
-  color: #ffffff;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.header-right {
-  background-color: white; /* Light right side */
- justify-content: flex-end;
-}
-
-.nav-links {
-  display: flex;
-  gap: 90px;
-  margin-top: 8%;
-  height: 120px;
-  right: 100px;
+  height: 100%;
+  padding: 20px;
   position: relative;
-  
+  top: -40px;
 }
 
-.nav-links a {
-  color: #15161a; /* Black text for links */
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 20px;
-  transition: color 0.3s ease;
+.card-icon {
+  margin-bottom: 0;
+  position: relative;
+  top: 70px;
 }
 
-.nav-links a:hover {
-  color: #c49b36;
+.card-icon img {
+  width: 50px;
 }
 
-/* Footer Styles */
+.card h3 {
+  font-size: 18px;
+  color: #facc15;
+  margin-bottom: 10px;
+  position: relative;
+  top: 40px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  position: relative;
+  top: 10px;
+}
+
+.card button {
+  background: transparent;
+  border: 1px solid #facc15;
+  color: #facc15;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #facc15;
+  color: #000;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  margin: 50px auto 0;
+  padding: 40px 20px;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(22,22,27,1.5);
+  color: #fff;
+  width: 35rem;
+  height: 10rem;
+  margin-top: 80px;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('../images/about/Background.png') center/cover no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.banner h2 {
+  color: #facc15; /* yellow text */
+  position: relative;
+  z-index: 1;
+  top: -10px;
+}
+
+.banner p {
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  margin-bottom: 0px;
+  position: relative;
+  top: -20px;
+}
+
+.banner-phone {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  border: 1px solid #facc15;
+  color: #facc15;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+}
+
+.banner-phone:hover {
+  background: #facc15;
+  color: #000;
+}
+
+/* Footer */
 .footer {
   background-color: #1a1a1a;
-  color: #ffffff;
+  color: #fff;
   padding: 60px 20px 30px;
   text-align: center;
   position: relative;
-  height: 660px;
-  bottom: -426px;
-  top: 500px;
-  margin-top: 500px;
 }
 
 .footer-wrapper {
@@ -144,19 +262,18 @@ body{
   border-radius: 2px;
   font-size: 0.95rem;
   background-color: #fff;
-  color: #000;           
+  color: #000;
   outline: none;
   box-shadow: none;
 }
+
 .newsletter-label {
   font-size: 0.9rem;
-  color: #aaaaaa5d; 
+  color: #aaaaaa5d;
   margin-bottom: 8px;
   display: block;
   text-align: left;
   max-width: 480px;
-  position: relative;
-  right: 188px;
 }
 
 .subscribe-btn {
@@ -169,8 +286,6 @@ body{
   margin-bottom: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  position: relative;
-  top: 10px;
 }
 
 .subscribe-btn:hover {
@@ -206,16 +321,9 @@ body{
   border: none;
   border-top: 1px solid #777;
   margin-bottom: 20px;
-  position: relative;
-  top: 10px;
 }
 
 .footer p {
   font-size: 0.85rem;
   color: #aaa;
-}
-
-.copyright {
-  position: relative;
-  top: 10px;
 }
