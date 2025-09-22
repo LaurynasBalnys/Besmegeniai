@@ -18,22 +18,17 @@ body {
   color: #363636;
 }
 
-.form-box {
-  flex: 1;
-  padding: 20px;
-  /* margin-bottom: 20px; */
-}
 
+.newsletter-input{
+  margin: 0;
+}
 
 .container {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  min-height: 80vh;
   align-items: flex-start;
   justify-content: center;
-  padding: 40px;
-  gap: 50px;
-  margin-bottom: 50px;
 }
 
 /* Contact heading block */
@@ -46,25 +41,26 @@ body {
   position: relative;
   font-weight: bold;
   top: 5rem;
-  right: 580px;
+  text-align: left;
+  left: -210px;
 }
 
 .emoji {
   color: #c49b36;
   position: relative;
-  right: -30px;
-  top: 2px;
-  
+  left: 80px;
+  bottom: 10px;
 }
 
-/* Form block */
+
 .form-box {
   flex: 1;
+  padding: 20px;
   max-width: 500px;
-  position: absolute;
+  position: relative;
   width: 100px;
-  left: 5rem;
-  top: 285px;
+  right: 33rem;
+  top: 205px;
 }
 
 form {
@@ -74,9 +70,9 @@ form {
   width: 35rem;
 }
 
-input, textarea {
+input, textarea.cv {
   width: 100%;
-  padding: 5px;
+  padding: 10px 5px 0px 5px;
   border: none;
   margin: 20px;
   border-bottom: 2px solid #ccc;
@@ -84,18 +80,21 @@ input, textarea {
   background-color: transparent;
   outline: none;
   transition: border-color 0.3s;
+  position: relative;
+  text-align: left;
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus.cv {
   border-bottom: 4px solid #000;
 }
 
-textarea {
-  resize: vertical;
-  min-height: 130px;
+textarea.cv {
+  min-height: 112px;
   position: relative;
-  padding-top: 120px; 
+  text-align:left;
   resize: none;
+  font-family: "poppins";
+  padding-top: 0px;
 }
 
 .submit{

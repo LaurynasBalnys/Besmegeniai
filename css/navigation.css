@@ -100,6 +100,10 @@ body {
   outline: none;
   box-shadow: none;
 }
+
+input:focus.newsletter-input, textarea:focus.newsletter-input {
+  border-bottom: 0px;
+}
 .newsletter-label {
   color: #aaaaaa5d; 
   margin-bottom: 8px;
@@ -115,7 +119,7 @@ body {
 .subscribe-btn {
   background-color: #e5b951;
   color: #fff;
-  font-weight: 17px;
+  font-weight: 17;
   border: none;
   padding: 12px 25px;
   border-radius: 3px;
@@ -136,7 +140,7 @@ body {
   font-size: 0.9rem;
   letter-spacing: 1px;
   font-family: "Roboto";
-  font-weight: 17px;
+  font-weight: 17;
 }
 
 .social-icons {
@@ -174,6 +178,6 @@ body {
 .copyright {
   position: relative;
   font-family: "Open Sans";
-  font-weight: 16px;
+  font-weight: 16;
   top: 10px;
 }
