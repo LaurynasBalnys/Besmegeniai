@@ -29,7 +29,7 @@
 }
 
 .card:hover{
-    transition: scale 0.5s, background-color 0.5s;;
+    transition: scale 0.5s, background-color 0.5s;
     background-color: #c9a23e18;
     scale: 1.1;
 }
