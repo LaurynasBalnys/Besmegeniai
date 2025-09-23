@@ -29,6 +29,7 @@ body {
   min-height: 80vh;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 140px;
 }
 
 /* Contact heading block */
