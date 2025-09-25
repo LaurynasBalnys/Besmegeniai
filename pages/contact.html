@@ -33,15 +33,24 @@
       <h1 class="contact-heading">Contact Us</h1><img class="emoji" src="../images/sue2.png" alt="icon.png">
     </div>
 
-    <div class="form-box">
-      <form>
-        <input type="text" placeholder="Name" required />
-        <input type="tel" placeholder="Phone number" required />
-        <input type="email" placeholder="Email" required />
-        <textarea class="cv" placeholder="Message" required></textarea>
-        <button class="submit" type="submit">Send</button>
-      </form>
-    </div>
+<div class="form-box">
+  <form id="contact-form" novalidate>
+    <input type="text" placeholder="Name" required />
+    <span class="error-message">Please enter your name</span>
+
+    <input type="tel" placeholder="Phone number" required />
+    <span class="error-message">Please enter your phone number</span>
+
+    <input type="email" placeholder="Email" required />
+    <span class="error-message">Please enter your email</span>
+
+    <textarea class="cv" placeholder="Message" required></textarea>
+    <span class="error-message">Please enter your message</span>
+
+    <button class="submit" type="submit">Send</button>
+  </form>
+</div>
+
 
     <div class="image-section">
       <img src="../images/lawspar.png" alt="LawSpar Justice" class="law-image"/>
@@ -75,5 +84,6 @@
   </footer>
 
   <script src="../js/navigation.js"></script>
+  <script src="../js/form.js"></script>
 </body>
 </html>
