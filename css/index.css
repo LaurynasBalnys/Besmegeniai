@@ -1,13 +1,15 @@
+
 body{
   margin:0;
-  background-color: #1a1a1a;
+  
 }
 
 .home {
   display: flex;
+
 }
 
-.box-left, .box-right {
+.box-left{
   height: 726px;
   width: 50%;
   display: flex;
@@ -16,13 +18,18 @@ body{
   padding: 0 40px;
 }
 
+.box-right {
+  width: 50%;
+  position: relative;
+}
+
 .verticalLine{
   width: 2px;
   height: 201px;
   background-color: white;
-  position: relative;
-  top: -80px;
-  left: -200px;
+  position: absolute;
+  top: 12%;
+  right: 50%;
 }
 
 .box-left {
@@ -44,10 +51,11 @@ body{
 }
 
 .desc{
+ 
   font-size: 17px;
   font-family: "Open Sans";
   font-weight: normal;
-  white-space: nowrap;
+  white-space: normal;
   line-height: 2; 
 }
 
@@ -60,4 +68,113 @@ body{
   border-radius: 3px;
   font-size: 17px; 
   cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1440px){
+
+.home {
+  display: block;
+  flex-direction:column;
+  width: 100%;
+  
+}
+.imageSueLogo {
+  max-width: 100%;            
+  height: auto;               
+  
+}
+
+.box-left, .box-right {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  height: 38rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+
+.verticalLine{
+position: absolute;
+left: -40px;
+top: 75px;
+height: 280px;
+} 
+
+ 
+.desc{
+  width: 10rem;
+  white-space: normal;
+  position: relative;
+  right: -70px;
+  
+}
+.contact-btn {
+  color: #efc357; 
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #efc357; 
+  padding: 10px 50px; 
+  border-radius: 3px;
+  font-size: 17px; 
+  cursor: pointer;
+}
+
+}
+
+@media (max-width: 767px){
+.home {
+  display: block;
+  flex-direction:column;
+  text-align: center;
+  position: relative;
+  
+}
+
+.desc{
+  
+  white-space: normal;
+  position: relative;
+  right: -70px;
+  
+  
+}
+
+.box-left, .box-right {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  height: 37rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+
+.imageSueLogo {
+  max-width: 100%;            
+  height: auto;               
+  
+}
+
+.verticalLine{
+position: absolute;
+left: -40px;
+top: 75px;
+height: 280px;
+} 
+
+.contact-btn {
+  color: #efc357; 
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #efc357; 
+  padding: 10px 50px; 
+  border-radius: 3px;
+  font-size: 17px; 
+  cursor: pointer;
+}
 }
