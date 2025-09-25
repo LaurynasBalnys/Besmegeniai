@@ -182,3 +182,107 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
   font-weight: 16;
   top: 10px;
 }
+
+.hamburger-menu {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #15161a;
+  display: none;
+  z-index: 1099; /* поверх меню */
+}
+
+.hamburger-menu.open {
+  color: #c49b36;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .split-header {
+      display: flex;
+      height: 200px;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      flex-direction: column-reverse;
+  }
+
+  .header-left, 
+  .header-right {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      text-align: center;
+      
+  }
+
+  .nav-links {
+      gap: 20px;                   /* меньше отступы */
+      position: static;            /* убираем смещение */
+      margin-top: 10px;
+  }
+
+  .logo {
+      font-size: 1.2rem;           /* чуть меньше логотип */
+  }
+}
+
+@media (max-width: 767px) {
+
+  .split-header {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+  }
+
+  .header-left, 
+  .header-right {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links.mobile-menu {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: #f7f7fb;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* text-align: center; */
+    gap: 30px;
+    padding: 20px;
+    transform: translateX(100%); /* спрятано справа */
+    transition: transform 0.5s ease;
+    z-index: 1100;
+  }
+
+  .nav-links.mobile-menu a {
+    font-size: 17px;
+    color: #15161a;
+  }
+
+  .nav-links.mobile-menu.open {
+    transform: translateX(0); 
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+}
