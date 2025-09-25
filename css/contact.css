@@ -91,11 +91,38 @@ input:focus, textarea:focus.cv {
 
 textarea.cv {
   min-height: 112px;
-  position: relative;
-  text-align:left;
   resize: none;
-  font-family: "poppins";
-  padding-top: 0px;
+  font-family: "Poppins", sans-serif;
+  padding: 0 5px 10px 5px; 
+  line-height: 1.5;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+
+textarea.cv::placeholder {
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  color: #aaa;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+
+textarea.cv:focus {
+  padding: 10px 5px; 
+  border-bottom: 4px solid #000;
+}
+
+
+textarea.cv:focus::placeholder {
+  opacity: 0;
 }
 
 .submit{
@@ -128,7 +155,7 @@ button:hover {
 
 .law-image {
   height: 30rem;
-  /* width: 30rem; */
+
   position: absolute;
   left: 5rem;
   top: 0px;
@@ -153,3 +180,363 @@ button:hover {
   left: 380px;
 }
 
+.error-message {
+  display: none;
+  color: #F67E7E;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  margin-top: -15px;
+}
+
+.error-message.active {
+  display: block;
+}
+
+input.error, textarea.error {
+  border-bottom: 2px solid #F67E7E !important;
+}
+
+input.error, textarea.error {
+  border-bottom: 2px solid #F67E7E !important; 
+  color: #F67E7E;
+}
+
+input.error::placeholder, textarea.error::placeholder {
+  color: #F67E7E; 
+}
+
+@media (min-width: 738px) and (max-width: 1440px) {
+    body {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+ 
+  .form-section {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin: auto 0;
+  }
+
+  .contact-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    top:  43px;
+    left: -30px;
+  }
+
+  .emoji {
+    color: #c49b36;
+    font-size: 2rem;
+    position: static;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0px;
+    left: 215px;
+    text-wrap: none;
+  }
+
+  /* Image block */
+  .image-section {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .law-image {
+    height: 25rem;
+    width: 20rem;
+    left: 2px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo-text h2 {
+    position: static;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+  }
+
+  .logo-text p {
+    position: static;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    color: #c49b36;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Form block */
+ .container {
+  display: flex;
+  flex-direction: column; /* stack content on smaller screens */
+  align-items: center;    /* center horizontally */
+  justify-content: center;/* center vertically if container has height */
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 140px;
+}
+
+/* Form block */
+.form-box {
+  width: 85%;
+  max-width: 500px;
+  padding: 0px;
+  margin: 0 auto;  /* ensures horizontal centering */
+  position: static; /* remove offsets */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+  input, textarea.cv {
+    width: 100%;
+    padding: 10px 5px 0px 5px;
+    border: none;
+    margin: 20px 0;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+    text-align: left;
+  }
+
+  input:focus, textarea:focus.cv {
+    border-bottom: 4px solid #000;
+  }
+
+  textarea.cv {
+    min-height: 112px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    padding-top: 0px;
+  }
+
+  .submit {
+    padding: 12px;
+    background-color: #363636;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 140px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s;
+    font-family: 'Poppins';
+    font-weight: 200;
+    position: relative;
+    left: 10px;
+  }
+
+  .submit:hover {
+    background-color: #333;
+  }
+}
+
+
+@media  (max-width: 767px){
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+ 
+  .form-section {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin: auto 0;
+  }
+
+  .contact-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    margin-bottom: 0;
+    top:  43px;
+    left: -30px;
+  }
+
+  .emoji {
+    color: #c49b36;
+    font-size: 2rem;
+    position: static;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    position: relative;
+    top: 0px;
+    left: 215px;
+    text-wrap: none;
+  }
+
+  /* Image block */
+  .image-section {
+    position: static;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .error-message {
+  display: none;
+  color: #F67E7E;
+  font-size: 0.9rem;
+  margin-left: 20px;
+  margin-top: -15px;
+}
+
+.error-message.active {
+  display: block;
+}
+
+input.error, textarea.error {
+  border-bottom: 2px solid #F67E7E !important;
+}
+
+input.error, textarea.error {
+  border-bottom: 2px solid #F67E7E !important; 
+  color: #F67E7E;
+}
+
+input.error::placeholder, textarea.error::placeholder {
+  color: #F67E7E; 
+}
+
+  .law-image {
+    height: 25rem;
+    width: 20rem;
+    left: 2px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .logo-text h2 {
+    position: static;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+  }
+
+  .logo-text p {
+    position: static;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    color: #c49b36;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  /* Form block */
+ .container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 140px;
+}
+
+/* Form block */
+.form-box {
+  width: 85%;
+  max-width: 500px;
+  padding: 0px;
+  margin: 0 auto;  
+  position: static; 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+  input, textarea.cv {
+    width: 100%;
+    padding: 10px 5px 0px 5px;
+    border: none;
+    margin: 20px 0;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+    text-align: left;
+  }
+
+  input:focus, textarea:focus.cv {
+    border-bottom: 4px solid #000;
+  }
+
+  textarea.cv {
+    min-height: 112px;
+    resize: none;
+    font-family: "Poppins", sans-serif;
+    padding-top: 0px;
+  }
+
+  .submit {
+    padding: 12px;
+    background-color: #363636;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 140px;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s;
+    font-family: 'Poppins';
+    font-weight: 200;
+    position: relative;
+    left: 10px;
+  }
+
+  .submit:hover {
+    background-color: #333;
+  }
+}
