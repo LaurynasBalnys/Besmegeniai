@@ -1,0 +1,33 @@
+div.box-right, div.box-left{
+    transition: width 0.7s ease;
+}
+
+.box-right {
+    width: 100%;
+}
+
+.box-left {
+    width: 0%;
+    
+}
+
+.text-right{
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.imageSueLogo{
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.law_image{
+    transition: opacity 1s, right 1s;
+    opacity: 0;
+    right: 20rem;
+}
+
+.container-comands{
+    transition: opacity 1s, margin-top 1s ease;
+    opacity: 0;
+}

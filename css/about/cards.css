@@ -1,0 +1,86 @@
+.slider-container {
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    cursor: grab;
+    transition: transform 0.3s ease;
+}
+
+.slider:active {
+    cursor: grabbing;
+}
+
+.card {
+    min-width: 374px;
+    height: 20rem;
+    border: 2px solid #c9a23e;
+    border-radius: 5px;
+    padding-top: 80px;
+    text-align: center;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    transition: opacity 0.5s, background-color 1s, scale 0.5s;
+    user-select: none;
+}
+
+.card:hover{
+    transition: scale 0.5s, background-color 0.5s;
+    background-color: #c9a23e18;
+    scale: 1.1;
+}
+
+p.text{
+    font-family: "poppins";
+    font-weight: 17px;
+    width: 284px;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+}
+
+.card.invisible {
+    opacity: 0;
+}
+
+.avatar {
+    width: 114px;
+    height: 114px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name {
+    color: #c9a23e;
+    margin-bottom: 20px;
+    font-size: 1.375rem;
+    font-family: "poppins";
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
+
+    /* margin-bottom: 20px; */
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #666;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #c9a23e;
+}

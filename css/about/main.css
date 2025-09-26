@@ -1,10 +1,11 @@
 body {
     margin: 0;
-    margin-top: 12.5rem;
+    /* margin-top: 12.5rem; */
     position: relative;
 }
 
 .about-container {
+    margin-top: 100px;
     position: relative;
     left: 50%;
     top: 0;
@@ -34,7 +35,7 @@ p.about_text {
     max-width: 36.688rem;
     width: 33,688rem;;
     position: relative;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
     font-weight: 17px;
     left: -250px;
     top: 40px;
@@ -46,7 +47,7 @@ button.read_more {
     border: none;
     min-width: 11rem;
     height: 3.125rem;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
     font-weight: 300;
     font-size: 1.063rem;
     border-radius: 0.313rem;
@@ -70,14 +71,29 @@ img.icon{
     height: 40px;
 }
 
-/* Адаптив для планшетов и телефонов */
-@media (max-width: 900px) {
+.TestimonialText{
+    font-weight: bold;
+    font-family: "poppins";
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.container-comands{
+    margin-top: 200px;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    background-color: #18191e;
+    width: 100%;
+}
+
+
+@media (min-width: 642px) and (max-width: 1200px) {
     .about-content,
     img.law_image {
         position: static;
         width: 60%;
         left: 50%;
-        /* right: auto; */
         top: auto;
         margin: 0 0 1rem 0;
     }
@@ -105,7 +121,8 @@ img.icon{
         margin-left: 35%;
     }
 
-    .teams_pages{
+    .container-comands{
         margin-top: 0px;
+        width: 150%;
     }
 }
