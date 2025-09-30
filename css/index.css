@@ -1,28 +1,40 @@
+
 body{
   margin:0;
-  background-color: #1a1a1a;
+  
 }
 
 .home {
   display: flex;
+
 }
 
-.box-left, .box-right {
+h1 {
+  margin-bottom: 50px;
+}
+
+
+.box-left{
   height: 726px;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center; 
-  padding: 0 40px;
+
+}
+
+.box-right {
+  width: 50%;
+  position: relative;
 }
 
 .verticalLine{
   width: 2px;
-  height: 201px;
+  height: 230px;
   background-color: white;
-  position: relative;
-  top: -80px;
-  left: -200px;
+  position: fixed;
+  top: 18%;
+  right: 17%;
 }
 
 .box-left {
@@ -37,17 +49,21 @@ body{
 
 .text-right{
   font-weight: bold;
-  font-size: 60px;
+  font-size: 32px;
   font-family: "Poppins";
-  padding-left: 20px;
+  padding-left: 80px;
+  padding-top: 120px;
   line-height: 1.2;
+  
 }
 
 .desc{
+ 
   font-size: 17px;
   font-family: "Open Sans";
   font-weight: normal;
-  white-space: nowrap;
+  white-space: normal;
+  padding-bottom: 30px;
   line-height: 2; 
 }
 
@@ -58,6 +74,129 @@ body{
   border-color: #efc357; 
   padding: 10px 50px; 
   border-radius: 3px;
+  font-size: 20px; 
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1440px){
+
+.home {
+  display: block;
+  flex-direction:column;
+  width: 100%;
+  
+}
+.imageSueLogo {
+  max-width: 100%;            
+  height: auto;               
+  
+}
+
+.box-left, .box-right {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  height: 38rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 0;
+}
+
+.verticalLine{
+  position: absolute;
+  top: 0%;
+right: 5%;
+height: 100%;
+} 
+
+ 
+.desc{
+  font-size: 1.3rem;
+  white-space: normal;
+}
+.contact-btn {
+  color: #efc357; 
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #efc357; 
+  padding: 10px 50px; 
+  border-radius: 3px;
   font-size: 17px; 
   cursor: pointer;
+}
+
+.text-right{
+  font-size: 1.2rem;
+  padding-top: 0.1rem;
+  padding-inline: 2rem;
+}
+
+h1{
+  
+}
+
+}
+
+@media (max-width: 767px){
+.home {
+  display: block;
+  flex-direction:column;
+  text-align: center;
+  position: relative;
+  
+}
+
+
+.box-left, .box-right {
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  height: 37rem;
+  width: 100%;
+  text-align: center;
+}
+
+.imageSueLogo {
+  max-width: 100%;            
+  height: auto;               
+  
+}
+
+.verticalLine{
+  position: absolute;
+right:5%;
+top: 0%;
+height: 100%;
+} 
+
+.contact-btn {
+  color: #efc357; 
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #efc357; 
+  padding: 10px 50px; 
+  border-radius: 3px;
+  font-size: 17px; 
+  cursor: pointer;
+}
+
+.text-right{
+  font-size: 1.2rem;
+  padding-top: 0.1rem;
+  padding-inline: 2rem;
+}
+
+.desc{
+  font-size: 1.3rem;
+  white-space: normal;
+ 
+  
+}
+
+h1 {
+  margin-bottom: 20px;
+}
 }
