@@ -29,6 +29,8 @@ body {
   
 }
 
+
+
 .cards {
   display: flex;
   justify-content: center;
@@ -36,13 +38,29 @@ body {
   gap: 10px;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Card wrapper */
 .card {
   position: relative;
   width: 250px;
+
   background: rgba(23,24,28,1);
-  overflow: hidden;
-  height: 20rem;
   color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.4s ease; 
 }
 
 .card::before {
@@ -53,68 +71,96 @@ body {
   background-position: center;
   opacity: 0.06;
   z-index: 0;
+  border-radius: 8px;
 }
 
-.card[data-bg="family"]::before {
-  background-image: url('../images/about/family\ law\ bg.png');
-}
-.card[data-bg="traffic"]::before {
-  background-image: url('../images/about/traffic\ Accident\ bg.png');
-}
-.card[data-bg="weapon"]::before {
-  background-image: url('../images/about/Weapon\ bg.png');
-}
-.card[data-bg="financial"]::before {
-  background-image: url('../images/about/finance\ law\ bg.png');
-}
-
-/* Card content wrapper */
 .card-content {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 20px;
+  text-align: center;
+  gap: 8px;
+  flex-grow: 1; 
+}
+
+
+
+.card[data-bg="family"]::before {
+  background-image: url("../images/about/family law bg.png");
+}
+.card[data-bg="traffic"]::before {
+  background-image: url("../images/about/traffic Accident bg.png");
+}
+.card[data-bg="weapon"]::before {
+  background-image: url("../images/about/Weapon bg.png");
+}
+.card[data-bg="financial"]::before {
+  background-image: url("../images/about/finance law bg.png");
+}
+
+.card-content {
   position: relative;
-  top: -40px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+
+.card-icon img {
+  max-width: 100%;
+  max-height: 100%;   
 }
 
 .card-icon {
-  margin-bottom: 0;
-  position: relative;
-  top: 70px;
-}
-
-.card-icon img {
   width: 50px;
+  height: 50px;      
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; 
 }
 
 .card h3 {
   font-size: 18px;
   color: #facc15;
-  margin-bottom: 10px;
-  position: relative;
-  top: 40px;
+  margin: 0;            
+  padding: 0;
 }
 
 .card p {
   font-size: 14px;
   color: #ccc;
-  margin-bottom: 10px;
-  position: relative;
-  top: 10px;
+  margin: 0;
 }
 
+
+.more-text {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.more-text.show {
+  max-height: 120px; 
+}
+
+
 .card button {
+  align-self: center;
   background: transparent;
   border: 1px solid #facc15;
   color: #facc15;
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: auto; 
 }
 
 .card button:hover {
@@ -135,6 +181,21 @@ body {
   height: 10rem;
   margin-top: 80px;
 }
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px; /* space before the banner */
+}
+
+.banner {
+  margin: 50px auto 0;
+  text-align: center;
+  max-width: 600px; /* optional: keeps it centered nicely */
+}
+
+
 
 .banner::before {
   content: "";
@@ -146,7 +207,7 @@ body {
 }
 
 .banner h2 {
-  color: #facc15; /* yellow text */
+  color: #facc15;
   position: relative;
   z-index: 1;
   top: -10px;
@@ -157,7 +218,6 @@ body {
   z-index: 1;
   font-size: 12px;
   margin-bottom: 0px;
-  position: relative;
   top: -20px;
 }
 
@@ -170,7 +230,6 @@ body {
   padding: 8px 15px;
   cursor: pointer;
   font-weight: bold;
-  position: relative;
   top: 10px;
 }
 
