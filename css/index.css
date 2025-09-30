@@ -9,13 +9,18 @@ body{
 
 }
 
+h1 {
+  margin-bottom: 50px;
+}
+
+
 .box-left{
   height: 726px;
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center; 
-  padding: 0 40px;
+
 }
 
 .box-right {
@@ -25,11 +30,11 @@ body{
 
 .verticalLine{
   width: 2px;
-  height: 201px;
+  height: 230px;
   background-color: white;
-  position: absolute;
-  top: 12%;
-  right: 50%;
+  position: fixed;
+  top: 18%;
+  right: 17%;
 }
 
 .box-left {
@@ -44,10 +49,12 @@ body{
 
 .text-right{
   font-weight: bold;
-  font-size: 60px;
+  font-size: 32px;
   font-family: "Poppins";
-  padding-left: 20px;
+  padding-left: 80px;
+  padding-top: 120px;
   line-height: 1.2;
+  
 }
 
 .desc{
@@ -56,6 +63,7 @@ body{
   font-family: "Open Sans";
   font-weight: normal;
   white-space: normal;
+  padding-bottom: 30px;
   line-height: 2; 
 }
 
@@ -66,7 +74,7 @@ body{
   border-color: #efc357; 
   padding: 10px 50px; 
   border-radius: 3px;
-  font-size: 17px; 
+  font-size: 20px; 
   cursor: pointer;
 }
 
@@ -98,19 +106,16 @@ body{
 }
 
 .verticalLine{
-position: absolute;
-left: -40px;
-top: 75px;
-height: 280px;
+  position: absolute;
+  top: 0%;
+right: 5%;
+height: 100%;
 } 
 
  
 .desc{
-  width: 10rem;
+  font-size: 1.3rem;
   white-space: normal;
-  position: relative;
-  right: -70px;
-  
 }
 .contact-btn {
   color: #efc357; 
@@ -121,6 +126,16 @@ height: 280px;
   border-radius: 3px;
   font-size: 17px; 
   cursor: pointer;
+}
+
+.text-right{
+  font-size: 1.2rem;
+  padding-top: 0.1rem;
+  padding-inline: 2rem;
+}
+
+h1{
+  
 }
 
 }
@@ -134,14 +149,6 @@ height: 280px;
   
 }
 
-.desc{
-  
-  white-space: normal;
-  position: relative;
-  right: -70px;
-  
-  
-}
 
 .box-left, .box-right {
   display: flex;              
@@ -150,8 +157,6 @@ height: 280px;
   height: 37rem;
   width: 100%;
   text-align: center;
-  position: relative;
-  padding: 0;
 }
 
 .imageSueLogo {
@@ -161,10 +166,10 @@ height: 280px;
 }
 
 .verticalLine{
-position: absolute;
-left: -40px;
-top: 75px;
-height: 280px;
+  position: absolute;
+right:5%;
+top: 0%;
+height: 100%;
 } 
 
 .contact-btn {
@@ -176,5 +181,22 @@ height: 280px;
   border-radius: 3px;
   font-size: 17px; 
   cursor: pointer;
+}
+
+.text-right{
+  font-size: 1.2rem;
+  padding-top: 0.1rem;
+  padding-inline: 2rem;
+}
+
+.desc{
+  font-size: 1.3rem;
+  white-space: normal;
+ 
+  
+}
+
+h1 {
+  margin-bottom: 20px;
 }
 }
