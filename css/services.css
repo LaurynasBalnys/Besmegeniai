@@ -237,3 +237,53 @@ body {
   background: #facc15;
   color: #000;
 }
+
+/* //////////////////////////////////////////// */
+@media (max-width: 767px){
+.banner{
+  width: 16rem;
+  height: 12rem ;
+  /* border-radius: 8px; */
+
+}
+.what-we-cover .section-title{
+    top: 1rem;
+}
+}
+
+/* //////////////////////////////////////////////// */
+@media (min-width: 640px) and (max-width: 767px){
+  .cards-row{
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+    align-content: space-around;
+    flex-direction: grid;
+  }
+  .what-we-cover .section-title{
+    top: 1rem;
+  }
+ 
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1440px){
+.cards-row {
+  display: grid;
+  grid-template-columns: 300px 300px; 
+  justify-content: center;
+  margin: 50px auto;
+}
+.banner{
+  width: 16rem;
+  height: 12rem ;
+  /* border-radius: 8px; */
+  
+}
+.what-we-cover .section-title{
+    top: 1rem;
+}
+}
