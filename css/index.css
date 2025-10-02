@@ -32,8 +32,8 @@ h1 {
   width: 2px;
   height: 230px;
   background-color: white;
-  position: fixed;
-  top: 18%;
+  position: absolute;
+  top: 0%;
   right: 17%;
 }
 
