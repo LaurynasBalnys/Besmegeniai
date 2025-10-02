@@ -159,6 +159,7 @@ textarea.cv:focus::placeholder {
   position: absolute;
   left: 5rem;
   top: 0px;
+   transition: height 0.5s ease, width 0.5s ease;
 }
 
 .logo-text h2 {
@@ -289,7 +290,7 @@ input.error::placeholder, textarea.error::placeholder {
   align-items: center;    /* center horizontally */
   justify-content: center;/* center vertically if container has height */
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: 140px;
 }
 
@@ -439,12 +440,13 @@ input.error::placeholder, textarea.error::placeholder {
 }
 
   .law-image {
-    height: 25rem;
-    width: 20rem;
+    height: 22rem;
+    width: 17rem;
     left: 2px;
     position: relative;
     display: block;
     margin: 0 auto;
+   
   }
 
   .logo-text h2 {
@@ -470,7 +472,7 @@ input.error::placeholder, textarea.error::placeholder {
   align-items: center;    
   justify-content: center;
   width: 100%;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: 140px;
 }
 
