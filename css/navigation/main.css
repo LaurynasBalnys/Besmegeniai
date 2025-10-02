@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    overflow-x: hidden;
 }
 
 .split-header {
@@ -64,7 +65,7 @@ body {
 .footer {
   background-color: #1a1a1a;
   color: #ffffff;
-  padding: 60px 20px 30px;
+  padding: 60px 0px 30px;
   text-align: center;
   position: relative;
   height: auto;
@@ -205,6 +206,7 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
       justify-content: flex-end;
       position: fixed;
       flex-direction: column-reverse;
+      width: 100vw;
   }
 
   .header-left, 
@@ -226,19 +228,34 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
   .logo {
       font-size: 1.2rem;           /* чуть меньше логотип */
   }
+
+  footer.footer{
+    width: 100vw;
+    /* margin-top: 20px; */
+  }
+
+  .newsletter-label {
+    right: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 767px) {
+
+  body {
+    overflow-x: hidden;
+  }
 
   .split-header {
       display: flex;
       flex-direction: column-reverse;
       justify-content: flex-end;
+      width: 100%;
   }
 
   .header-left, 
   .header-right {
-      width: 100%;
+      width: 100vw;
       justify-content: center;
       align-items: center;
       padding: 10px 0;
@@ -259,7 +276,7 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
     top: 50px;
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 150px;
     background: #f7f7fb;
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -284,5 +301,26 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
+  }
+
+  footer.footer{
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* margin-top: 20px; */
+  }
+
+  .newsletter-label {
+    right: 0;
+    text-align: center;
+  }
+
+  input#newsletter.newsletter-input{
+    width: 90vw;
+    padding: 10px 0px;
+  }
+
+  .footer-line{
+    width: 90vw;
   }
 }

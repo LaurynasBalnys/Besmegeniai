@@ -84,3 +84,22 @@ p.text{
 .dot.active {
     background: #c9a23e;
 }
+
+@media (max-width: 1024px) {
+    .card {
+        min-width: 300px;
+    }
+}
+
+/* Мобильный */
+@media (max-width: 767px) {
+    .card {
+        min-width: 90vw; /* почти вся ширина экрана */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.text {
+        width: 80vw; /* текст тоже адаптивный */
+    }
+}

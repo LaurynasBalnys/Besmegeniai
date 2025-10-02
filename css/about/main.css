@@ -10,11 +10,11 @@ body {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    width: 36.688rem; /* или нужная ширина */
+    width: 100vw /* или нужная ширина */
 }
 
 img.law_image {
-    position: absolute;
+    position: static;
     right: -20rem;
     top: 0;
     width: 35.625rem;
@@ -88,10 +88,10 @@ img.icon{
 }
 
 
-@media (min-width: 642px) and (max-width: 1200px) {
-    .about-content,
-    img.law_image {
-        position: static;
+@media (min-width: 768px) and (max-width: 1439px) {
+    .about-content,img.law_image {
+        display: flex;
+        flex-direction: column;
         width: 60%;
         left: 50%;
         top: auto;
@@ -123,6 +123,6 @@ img.icon{
 
     .container-comands{
         margin-top: 0px;
-        width: 150%;
+        width: 100vw;
     }
 }
