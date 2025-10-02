@@ -142,7 +142,7 @@ textarea.cv:focus::placeholder {
   left: 20px;
 }
 
-button:hover {
+.submit:hover {
   background-color: #333;
 }
 
