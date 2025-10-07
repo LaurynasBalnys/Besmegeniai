@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
-      const card = btn.closest(".card");          // get the parent card
-      const moreText = card.querySelector(".more-text"); // find hidden text
+      const card = btn.closest(".card");         
+      const moreText = card.querySelector(".more-text"); 
 
-      if (!moreText) return; // safety check, skip if no more-text
+      if (!moreText) return; 
 
       // Toggle show class
       moreText.classList.toggle("show");

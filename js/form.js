@@ -55,7 +55,7 @@ function normalizeForProfanity(msg) {
     const v = leetMap[k];
     out = out.replace(new RegExp(k, 'g'), v);
   });
-  out = out.replace(/[^a-z0-9]/g, ''); // remove remaining non-alphanumeric
+  out = out.replace(/[^a-z0-9]/g, ''); 
   return out;
 }
 
@@ -68,7 +68,9 @@ fetch('../data/banned_words.txt')
     const words = data.split(/\r?\n/).map(word => word.trim()).filter(word => word.length >= 3);
     bannedWordPatterns = words.map(word => {
       const norm = normalizeForProfanity(word);
+
       // Allow repeated letters + optional trailing characters to catch shortened/truncated versions
+
       const patternString = norm.split('').map(ch => ch + '+').join('') + '.*';
       return new RegExp(patternString, 'i');
     });
@@ -81,7 +83,7 @@ function containsBannedWord(originalMessage) {
   if (!originalMessage || !filtersLoaded) return false;
   const words = originalMessage
     .toLowerCase()
-    .replace(/[^\p{L}\p{N}]+/gu, ' ') // remove punctuation
+    .replace(/[^\p{L}\p{N}]+/gu, ' ') 
     .split(/\s+/);
   return words.some(word => {
     const normalized = normalizeForProfanity(word);
@@ -158,7 +160,7 @@ fields.forEach(field => {
       if (!filtersLoaded) {
         showError('Loading filters, please wait...');
       } else if (containsBannedWord(value)) {
-        showError('Please avoid using inappropriate language', true); // persistent
+        showError('Please avoid using inappropriate language', true); 
       } else {
         field.classList.remove('error');
         errorMessage.classList.remove('active');
