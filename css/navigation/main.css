@@ -197,6 +197,11 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
 .hamburger-menu.open {
   color: #c49b36;
 }
+.responsive-logo {
+  display: none;
+}
+
+
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .split-header {
@@ -238,6 +243,10 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
     right: 0;
     text-align: center;
   }
+
+  .responsive-logo {
+  display: none;
+}
 }
 
 @media (max-width: 767px) {
@@ -245,6 +254,19 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
   body {
     overflow-x: hidden;
   }
+  .dark{
+ opacity: 0;
+ position: fixed; 
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0, 0, 0, 0.5); 
+ z-index: 1000; 
+ transition: transform 0.5s ease;
+}
+.responsive-logo {
+    display: block;
+  }
+
 
   .split-header {
       display: flex;
