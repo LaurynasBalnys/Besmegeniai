@@ -85,21 +85,39 @@ p.text{
     background: #c9a23e;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1439px) {
     .card {
         min-width: 300px;
+        height: 18rem;
     }
 }
 
-/* Мобильный */
 @media (max-width: 767px) {
-    .card {
-        min-width: 90vw; /* почти вся ширина экрана */
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .slider {
+    display: grid;
+    grid-auto-flow: column;            
+    grid-template-rows: repeat(3, auto); 
+    grid-auto-columns: 100vw;            
+    column-gap: 16px;
+    row-gap: 16px;       
+    transition: transform 0.35s ease;
+    justify-items: center;
+  }
 
-    p.text {
-        width: 80vw; /* текст тоже адаптивный */
-    }
+  .card {
+    min-width: auto;
+    width: 80vw;
+  }
+  .card p.text {
+    width: 70vw;
+  }
+
+  /* На мобилке никого не прячем — столбы формируются из всех карточек */
+  .card.invisible { display: block; opacity: 1; }
+
+  /* На телефонах отключим hover-анимации, чтобы не «дрыгалось» */
+  .card:hover {
+    scale: 1;
+    background-color: transparent;
+  }
 }
