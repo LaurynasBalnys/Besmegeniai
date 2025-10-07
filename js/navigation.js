@@ -1,6 +1,7 @@
     window.addEventListener('DOMContentLoaded', () => {
         const header = document.querySelector('.split-header');
         const links = document.querySelector('.nav-links');
+        const dark = document.querySelector(' .dark');
 
         let hidePoint = 40;
         let activeBurger = false;
@@ -19,10 +20,21 @@
         links.classList.add('mobile-menu');
 
         
-        hamburgerButton.addEventListener('click', () => {
-            links.classList.toggle('open');
-            hamburgerButton.classList.toggle('open');
-        });
+       hamburgerButton.addEventListener('click', () => {
+    links.classList.toggle('open');
+    hamburgerButton.classList.toggle('open');
+
+    // Check if menu is now open
+    if (links.classList.contains('open')) {
+        dark.style.opacity = 1;  // Show dark background
+    } else {
+        dark.style.opacity = 0;  // Hide dark background
+    }
+});
+
+
+
+        
 
         // Закрытие меню по клику на ссылку
         links.querySelectorAll('a').forEach(link => {
@@ -30,6 +42,7 @@
                 if (window.innerWidth < 768) {
                     links.classList.remove('open');
                     hamburgerButton.classList.remove('open');
+                    dark.style.opacity = 0;
                 }
             });
         });
