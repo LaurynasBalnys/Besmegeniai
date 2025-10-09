@@ -76,6 +76,14 @@ h1 {
   border-radius: 3px;
   font-size: 20px; 
   cursor: pointer;
+  transition: scale 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #efc357;
+  color: #15161a;
+  scale: 1.1;
+  transition: scale 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 

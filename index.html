@@ -27,7 +27,7 @@
   <div class="dark"></div>
   <header class="split-header">
     <div class="header-left">
-      <div class="logo">LAWSPAR</div>
+      <div class="homeShit logo">LAWSPAR</div>
     </div>
 
     <div class="header-right">
@@ -35,7 +35,7 @@
         <div>
           <img src="images/lawspar.png" alt="sue2" class="responsive-logo" style="width: 10rem; padding-left:10%">
         </div>
-        <a href="index.html">HOME</a>
+        <a class="active" href="#">HOME</a>
         <a href="./pages/about.html">ABOUT</a>
         <a href="./pages/services.html">SERVICES</a>
         <a href="./pages/contact.html">CONTACT US</a>
@@ -62,7 +62,7 @@
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div>
-          <button class="contact-btn">Contact Us</button>
+          <button onclick="goToLink()" class="contact-btn">Contact Us</button>
         </div>
       </div>
 
@@ -95,6 +95,12 @@
   </footer>
 
   <script src="js/navigation.js"></script>
+  <script>
+    //nah am lazzy to connect other js for one button -Aleksandras L. :P
+    function goToLink() {
+      window.location.href = "pages/contact.html";
+    }
+  </script>
 </body>
 
 </html

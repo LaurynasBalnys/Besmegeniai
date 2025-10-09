@@ -14,6 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Change button text accordingly
       btn.textContent = moreText.classList.contains("show") ? "Read Less" : "Read More";
+
+      if(moreText.classList.contains("show")) {
+        btn.classList.toggle("show");
+        card.classList.toggle("show");
+      }
+      else {
+        btn.classList.toggle("show");
+        card.classList.toggle("show");
+      }
     });
   });
 });

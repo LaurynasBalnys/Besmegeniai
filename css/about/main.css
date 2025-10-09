@@ -42,7 +42,7 @@ p.about_text {
 button.read_more {
     background-color: #18191e;
     color: #ffffff;
-    border: none;
+    border: 2px solid #15161a;
     min-width: 11rem;
     height: 3.125rem;
     font-family: "Poppins";
@@ -54,6 +54,15 @@ button.read_more {
     top: -9vw;
     left: -23.5vw;
     cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.3s ease;
+    scale: 1;
+}
+
+button.read_more:hover {
+    background-color: transparent;
+    color: #15161a;
+    transition: background-color 0.3s ease, scale 0.3s ease;
+    scale: 1.1;
 }
 
 .teams_pages {

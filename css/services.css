@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 /* What We Cover Section */
 .what-we-cover {
   padding: 60px 20px;
-  background: #fff;
+  background: #ffffff;
   text-align: center;
   margin-bottom: 0px;
   position: relative;
@@ -15,7 +15,7 @@ body {
 .what-we-cover .section-title {
   font-size: 28px;
   font-weight: bold;
-  color: #000;
+  color: #000000;
   margin-bottom: 40px;
   position: relative;
   top: -30px;
@@ -45,9 +45,6 @@ body {
   justify-content: center;
   align-items: stretch;
 }
-
-/* Card wrapper */
-
 
 .card::before {
   content: "";
@@ -133,7 +130,8 @@ body {
 }
 
 .more-text.show {
-  max-height: 120px; 
+  max-height: 120px;
+
 }
 
 
@@ -145,15 +143,30 @@ body {
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: auto; 
+  margin-top: auto;
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
 }
 
 .card button:hover {
-  background: #facc15;
-  color: #000;
+  background-color  : #facc15;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
+  scale: 1.1;
 }
 
-/* Banner */
+.card button.show {
+  background-color: #facc15;
+  color: #000000;
+  scale: 1.1;
+}
+
+.card.show {
+  background-color: #62500a;
+}
+.card.show p{
+  color:#facc15;
+}
+
 .banner {
   position: relative;
   margin: 50px auto 0;
@@ -242,14 +255,17 @@ body {
   cursor: pointer;
   font-weight: bold;
   top: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
+  scale: 1;
 }
 
 .banner-phone:hover {
   background: #facc15;
-  color: #000;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease, scale 0.3s ease;
+  scale: 1.1;
 }
 
-/* //////////////////////////////////////////// */
 @media (max-width: 767px){
   .cards-row{
     display: grid;
