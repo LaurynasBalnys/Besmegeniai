@@ -1,44 +1,42 @@
 body {
     margin: 0;
-    /* margin-top: 12.5rem; */
-    position: relative;
 }
 
 .about-container {
-    margin-top: 100px;
+    margin-top: 40px;
+    justify-content: center;
     position: relative;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    width: 100vw /* или нужная ширина */
+    align-items: center;
 }
 
 img.law_image {
-    position: static;
-    right: -20rem;
-    top: 0;
+    position: relative;
+    left: 54vw;
     width: 35.625rem;
     max-width: 100%;
+    top: -5vw;
     height: auto;
 }
 
 h1.title {
     margin-bottom: 1.25rem;
     position: relative;
-    top: 20px;
-    left: -250px;
-    font-family: "Poppins", sans-serif;
+    text-align: left;
+    width: 50%;
+    top: 10vw;
+    left: 14vw;
+    font-family: "Poppins";
     font-weight: 40px;
 }
 
 p.about_text {
-    max-width: 36.688rem;
-    width: 33,688rem;;
+    max-width: 33.563rem;
+    width: 33.563rem;
     position: relative;
     font-family: "Poppins";
     font-weight: 17px;
-    left: -250px;
-    top: 40px;
+    top: 12vw;
+    left: 14vw;
 }
 
 button.read_more {
@@ -53,10 +51,9 @@ button.read_more {
     border-radius: 0.313rem;
     text-align: center;
     position: relative;
-    margin-top: 1rem;
-
-    top: 60px;
-    left: -250px;
+    top: -9vw;
+    left: -23.5vw;
+    cursor: pointer;
 }
 
 .teams_pages {
@@ -75,7 +72,7 @@ img.icon{
     font-weight: bold;
     font-family: "poppins";
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     margin-top: 50px;
 }
 
@@ -89,13 +86,20 @@ img.icon{
 
 
 @media (min-width: 768px) and (max-width: 1439px) {
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
     .about-content,img.law_image {
         display: flex;
         flex-direction: column;
-        width: 60%;
-        left: 50%;
-        top: auto;
-        margin: 0 0 1rem 0;
+        align-items: center;
+        left: auto;
+        position: static;
     }
 
     h1.title{
@@ -108,17 +112,59 @@ img.icon{
 
     p.about_text {
         position: static;
-        width: 100%;
         text-align: center;
-        max-width: 60%;
-        margin-left: 22%;
+        width: 100%;
     }
 
     button.read_more {
         position: static;
         display: block;
         text-align: center;
-        margin-left: 35%;
+        margin: 50px;
+    }
+
+    .container-comands{
+        margin-top: 0px;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .about-content,img.law_image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: auto;
+        position: static;
+    }
+
+    h1.title{
+        position: static;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+
+
+    p.about_text {
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    button.read_more {
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 50px;
     }
 
     .container-comands{
