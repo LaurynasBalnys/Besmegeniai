@@ -24,13 +24,11 @@
     links.classList.toggle('open');
     hamburgerButton.classList.toggle('open');
 
-    // Check if menu is now open
+    
     if (links.classList.contains('open')) {
-        dark.style.opacity = 1;  // Show dark background
-        dark.style.zIndex = 1000; 
+        dark.style.opacity = 1;  // Show dark 
     } else {
-        dark.style.opacity = 0;  // Hide dark background
-        dark.style.zIndex = 0; 
+        dark.style.opacity = 0;  // Hide dark 
     }
 });
 
