@@ -55,11 +55,20 @@ body {
   transition: color 0.3s ease;
   font-family: "Poppins";
   font-weight: 17px;
+  transition: scale 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #c49b36;
+  scale: 1.1;
+  transition: scale 0.3s ease;
 }
+
+.nav-links a.active {
+  color: #c49b36;
+  scale: 1.1;
+}
+
 
 /* Footer Styles */
 .footer {
@@ -118,22 +127,39 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
 }
 
 .subscribe-btn {
-  background-color: #e5b951;
-  color: #fff;
+  background-color: #cfa935;
+  color: #ffffff;
   font-weight: 17;
   border: none;
   padding: 12px 25px;
   border-radius: 3px;
   margin-bottom: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, scale 0.3s ease;
   position: relative;
   top: 10px;
   font-family: "Roboto";
+  scale: 1;
+}
+
+.homeShit{
+  cursor: pointer;
+  scale: 1;
+  color: #ffffff;
+  transition: scale 0.3s ease, color 0.3s ease;
+}
+
+.homeShit:hover{
+  color: #cfa935;
+  scale: 1.1;
+  transition: scale 0.3s ease, color 0.3s ease;
 }
 
 .subscribe-btn:hover {
-  background-color: #cfa935;
+  background-color: #ffffff;
+  color: #15161a;
+  transition: background-color 0.3s ease, scale 0.3s ease;
+  scale: 1.1;
 }
 
 .follow-us h4 {
@@ -254,13 +280,13 @@ input:focus.newsletter-input, textarea:focus.newsletter-input {
     overflow-x: hidden;
   }
   .dark{
- opacity: 0;
- position: fixed; 
- width: 100%;
- height: 100%;
- background-color: rgba(0, 0, 0, 0.5); 
- z-index: 0; 
- transition: transform 0.5s ease;
+    opacity: 0;
+    position: fixed; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0; 
+    transition: transform 0.5s ease;
 }
 .responsive-logo {
     display: block;
