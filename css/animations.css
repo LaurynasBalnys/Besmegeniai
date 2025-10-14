@@ -1,33 +1,48 @@
-div.box-right, div.box-left{
-    transition: width 0.7s ease;
+.box-right{
+    transition: width 1s ease;
+    width: 100vw;
 }
 
-.box-right {
-    width: 100%;
-}
-
-.box-left {
-    width: 0%;
-    
+.box-left{
+    transition: width 1s ease;
+    width: 0vw;
 }
 
 .text-right{
     transition: opacity 1s ease;
     opacity: 0;
 }
-
 .imageSueLogo{
-    transition: opacity 1s;
+    transition: opacity 1s ease;
     opacity: 0;
 }
 
-.law_image{
-    transition: opacity 1s, right 1s;
-    opacity: 0;
-    right: 20rem;
+@media (min-width: 768px) and (max-width: 1440px){
+    .box-right{
+        width: 100vw;
+    }
+    .box-left{
+        width: 100vw
+    }
+    .text-right{
+        opacity: 0;
+    }
+    .imageSueLogo{
+        opacity: 0;
+    }
 }
 
-.container-comands{
-    transition: opacity 1s, margin-top 1s ease;
-    opacity: 0;
+@media (max-width: 767px){
+    .box-right{
+        width: 100vw;
+    }
+    .box-left{
+        width: 100vw
+    }
+    .text-right{
+        opacity: 0;
+    }
+    .imageSueLogo{
+        opacity: 0;
+    }
 }
