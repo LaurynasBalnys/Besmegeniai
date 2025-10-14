@@ -12,7 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     setTimeout(() => {
         law_image.style.opacity = '1';
-        law_image.style.right = '-20rem';
 
         container.style.opacity = '1';
         container.style.marginTop = '200px';
