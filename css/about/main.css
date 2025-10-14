@@ -189,6 +189,13 @@ img.icon{
         align-self: center;
     }
 
+    button.read_more:hover {
+        background-color: #15161a;
+        color: #ffffff;
+        transition: background-color 0.3s ease, scale 0.3s ease;
+        scale: 1;
+    }
+
     .container-comands{
         margin-top: 0px;
         width: 100vw;
@@ -235,6 +242,13 @@ img.icon{
         /* transform: translateX(50%); */
         /* width: 50%; */
         align-self: center;
+    }
+
+    button.read_more:hover {
+        background-color: #15161a;
+        color: #ffffff;
+        transition: background-color 0.3s ease, scale 0.3s ease;
+        scale: 1;
     }
 
     .container-comands{
