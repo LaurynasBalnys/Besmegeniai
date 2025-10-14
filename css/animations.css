@@ -17,6 +17,24 @@
     opacity: 0;
 }
 
+.container{
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(-40px);
+    opacity: 0;
+}
+
+.banner{
+    opacity: 0;
+    transform: translateY(-40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.cards-row .card{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
 @media (min-width: 768px) and (max-width: 1440px){
     .box-right{
         width: 100vw;
