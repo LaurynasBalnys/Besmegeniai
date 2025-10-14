@@ -259,6 +259,7 @@ input.error::placeholder, textarea.error::placeholder {
     position: static;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 90px;
   }
 
   .law-image {
@@ -415,6 +416,7 @@ form {
     position: static;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 90px;
   }
 
   .error-message {
